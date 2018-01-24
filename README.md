@@ -17,3 +17,8 @@ Points to be noted:
 2. Plugin usage should be minimal
 3. Responsiveness will be considered as plus point
 4. Creativity will be rewarding.
+
+
+### Checklist
+- [x] initiate project - folder structure / node packages required / initial view
+- [x] redux setup
