@@ -4,9 +4,9 @@ import { render } from 'react-dom'
 import { createStore } from 'redux'
 
 import Root from './components/Root'
-import todoApp from './reducers'
+import configureStore from './store/configureStore'
 
-const store = createStore(todoApp)
+const store = configureStore()
 
 render(
   <Root store={store} />,

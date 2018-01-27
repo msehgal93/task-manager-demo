@@ -27,4 +27,6 @@ Points to be noted:
   * body
   * status container
   * cards
-- [ ] Reactify them
+- [x] Reactify the App (View)
+- [x] add persistent storage in combination with redux [Extra Feature]
+- [ ] Reactify the App (Functionality)
