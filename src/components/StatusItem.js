@@ -3,7 +3,7 @@ import TaskItem from './TaskItem'
 
 class StatusItem extends Component {
   render() {
-    const { id, status, title, card_list } = this.props;
+    const { title, card_list } = this.props;
     return (
       <div className="status-item col-md-3 col-sm-6 col-xs-12">
         <div className="panel panel-default">

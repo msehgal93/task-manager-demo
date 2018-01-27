@@ -2,7 +2,7 @@ import React from 'react'
 
 const TaskItem = (props) => {
 
-  const { id, status, text } = props;
+  const { text } = props;
 
   return (
     <div className="task-item">

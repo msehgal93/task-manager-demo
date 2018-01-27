@@ -1,5 +1,7 @@
 # Task Manager ([Trello](https://trello.com) Like)
 
+## [View it LIVE](https://msehgal93.github.io/task-manager-demo/build/)
+
 ### Description
 _Task cards_ are rectangular cards which contains development related regular tasks(text format). (You can also add creation date fields).
 _Status Items_ is a container of _Task cards_. we can have a few default status viz - Pending, Completed, etc
