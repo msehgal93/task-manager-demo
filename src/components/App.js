@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import { Connect } from 'react-redux'
 import AppHeader from '../containers/AppHeader'
 import AppBody from './AppBody'
 

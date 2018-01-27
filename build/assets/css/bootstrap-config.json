@@ -1,0 +1,10 @@
+{
+  "vars": {},
+  "css": [
+    "grid.less",
+    "forms.less",
+    "panels.less"
+  ],
+  "js": [],
+  "customizerUrl": "https://getbootstrap.com/docs/3.3/customize/?id=07676824a6028e0660513424f382c8ec"
+}
