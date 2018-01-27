@@ -22,3 +22,9 @@ Points to be noted:
 ### Checklist
 - [x] initiate project - folder structure / node packages required / initial view
 - [x] redux setup
+- [x] UI Dev
+  * header
+  * body
+  * status container
+  * cards
+- [ ] Reactify them

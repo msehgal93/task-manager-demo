@@ -1,0 +1,130 @@
+/* Generic */
+
+.inline-block {
+  display: inline-block;
+}
+.row { margin: 0; }
+
+/* Generic end */
+
+
+
+/* Header */
+
+.app-header {
+  padding: 2em 4em;
+  background: #fafafa;
+}
+.app-header h1 {
+  font-weight: 500;
+  margin: 0;
+}
+.app-header button {
+  font-size: 1.2em;
+  background-color: transparent;
+  margin: 0 0.5em;
+  border-style: none;
+}
+
+/* Header end */
+
+
+
+/* Body */
+
+.status-item {
+  padding: 1em 0.5em;
+}
+.status-item:first-child {
+  padding-left: 1em;
+}
+.panel-heading {
+  padding: 10px 15px 5px;
+}
+.panel-heading button {
+  border-style: none;
+  background-color: transparent;
+  padding: 2px 0;
+}
+.panel-heading h3 {
+  max-width: 72%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.panel-body {
+  padding: 8px;
+}
+.task-item + .task-item {
+  margin-top: 8px;
+}
+.task-item {
+  padding: 5px;
+  background-color: #fafafa;
+  border-radius: 5px;
+}
+.text {
+  margin: 0;
+}
+.text-container {
+  padding: 5px;
+}
+.btn-bar {
+  overflow: hidden;
+}
+.btn-bar button {
+  border-style: none;
+  background-color: transparent;
+  padding: 0;
+}
+/* Body end */
+
+
+
+/* icons */
+@font-face {
+  font-family: 'fontello';
+  src: url('../icon-font/fontello.eot?32414554');
+  src: url('../icon-font/fontello.eot?32414554#iefix') format('embedded-opentype'),
+  url('../icon-font/fontello.woff?32414554') format('woff'),
+  url('../icon-font/fontello.ttf?32414554') format('truetype'),
+  url('../icon-font/fontello.svg?32414554#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.demo-icon {
+  font-family: "fontello";
+  font-style: normal;
+  font-weight: normal;
+  speak: none;
+
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
+  opacity: .8; 
+
+  /* For safety - reset parent styles, that can break glyph codes*/
+  font-variant: normal;
+  text-transform: none;
+
+  /* fix buttons height, for twitter bootstrap */
+  line-height: 1em;
+
+  /* Animation center compensation - margins should be symmetric */
+  /* remove if not needed */
+  margin-left: .2em;
+
+  /* You can be more comfortable with increased icons size */
+  font-size: 120%; 
+
+  /* Font smoothing. That was taken from TWBS */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* 3D effect */
+  text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); 
+}
+/* icons end */
