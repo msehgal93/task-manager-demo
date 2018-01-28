@@ -7,7 +7,7 @@ import { getStatusList } from '../store/actions'
 
 class AppBody extends Component {
   render() {
-    let status_list = this.props.status_list;
+    let { status_list } = this.props;
     return (
       <section className="row">
         {

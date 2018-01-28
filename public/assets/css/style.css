@@ -65,6 +65,7 @@
 }
 .text {
   margin: 0;
+  white-space: pre-line;
 }
 .text-container {
   padding: 5px;
@@ -76,6 +77,11 @@
   border-style: none;
   background-color: transparent;
   padding: 0;
+}
+.text-area {
+  background-color: #fefefe;
+  width: 100%;
+  padding: 0 5px;
 }
 /* Body end */
 

@@ -31,4 +31,5 @@ Points to be noted:
   * cards
 - [x] Reactify the App (View)
 - [x] add persistent storage in combination with redux [Extra Feature]
-- [ ] Reactify the App (Functionality)
+- [x] Reactify the App (Functionality)
+- [ ] Drag Drop Cards from one status to another
