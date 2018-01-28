@@ -38,6 +38,12 @@ export const deleteCard = (sID, cID) => {
 }
 
 
+export const dragDrop = (data, to) => {
+  data = data.split(':');
+  return { type : types.DRAG_DROP,  from : data[0],  to,  target : data[1] }
+}
+
+
 export const getStatusList = (state) => {
   return {
     'status_list': state.status_list

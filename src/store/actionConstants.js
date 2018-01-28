@@ -11,7 +11,8 @@ export const types = {
   EDIT_CARD           : 'EDIT_CARD',
   SAVE_CARD           : 'SAVE_CARD',
   CANCEL_CARD         : 'CANCEL_CARD',
-  DELETE_CARD         : 'DELETE_CARD'
+  DELETE_CARD         : 'DELETE_CARD',
+  DRAG_DROP           : 'DRAG_DROP'
 };
 
 
@@ -20,12 +21,22 @@ export const defaultState = {
     {
       id        : 'adhdf7dy7fyd7fyd7',
       status    : 'view',
-      title     : 'Completed',
+      title     : 'Features',
       card_list : [
         {
           id      : 'adhd234dy7fyd7fy',
           status  : 'view',
-          text    : 'Complete 5 Katas from Codewars'
+          text    : 'Hi, You Use this Task manager to handle day to day tasks.'
+        },
+        {
+          id      : 'uhdfdfd8fd7f8k88236',
+          status  : 'view',
+          text    : 'Your Tasks will persist throughout multiple sessions.'
+        },
+        {
+          id      : 'uhdfdfd8fd7f8k82236',
+          status  : 'view',
+          text    : 'And, Don\'t forget Drag-Drop Card Feature'
         }
       ]
     },
@@ -37,12 +48,7 @@ export const defaultState = {
         {
           id      : 'adhdf7djhsd6t62geyd7',
           status  : 'view',
-          text    : 'refresh to see that the tasks does not reset.'
-        },
-        {
-          id      : 'uhdfdfd8fd7f8k88236',
-          status  : 'view',
-          text    : 'subscribe to react+redux magazines.'
+          text    : 'None. Hurray!!!'
         }
       ]
     }

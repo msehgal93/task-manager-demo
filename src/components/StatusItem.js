@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Droppable } from 'react-drag-and-drop'
 
 import TaskItem from './TaskItem'
-import { deleteStatus, addCard, editStatus, saveStatus, cancelStatus } from '../store/actions'
+import { dragDrop, deleteStatus, addCard, editStatus, saveStatus, cancelStatus } from '../store/actions'
 
 
 class StatusItem extends Component {
@@ -16,6 +17,9 @@ class StatusItem extends Component {
         this.forceUpdate();
       }
     };
+  }
+  onDrop(data) {
+    this.props.dispatch(dragDrop(data.card,this.props.id));
   }
   render() {
     const { id, status, title, card_list, dispatch } = this.props;
@@ -44,7 +48,10 @@ class StatusItem extends Component {
       )
     else
       return (
-        <div className="status-item col-md-3 col-sm-6 col-xs-12">
+        <Droppable
+          types={['card']} // <= allowed drop types 
+          onDrop={this.onDrop.bind(this)}
+          className="status-item col-md-3 col-sm-6 col-xs-12">
           <div className="panel panel-default">
             <div className="panel-heading">
               <h3 className="panel-title inline-block">{title}</h3>
@@ -70,7 +77,7 @@ class StatusItem extends Component {
               }
             </div>
           </div>
-        </div>
+        </Droppable>
       )
   }
 }

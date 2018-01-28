@@ -30,6 +30,6 @@ Points to be noted:
   * status container
   * cards
 - [x] Reactify the App (View)
-- [x] add persistent storage in combination with redux [Extra Feature]
 - [x] Reactify the App (Functionality)
-- [ ] Drag Drop Cards from one status to another
+- [x] add persistent storage in combination with redux [Extra Feature]
+- [x] Drag Drop Cards from one status to another

@@ -1,4 +1,3 @@
-import v4 from 'uuid/v4';
 import { types, defaultState, getDefaultStatus, getDefaultCard } from './actionConstants';
 
 const mainReducer = (state = defaultState, action) => {
@@ -11,7 +10,7 @@ const mainReducer = (state = defaultState, action) => {
         getDefaultStatus()
       ]
     };
-    
+
     case types.DELETE_ALL_STATUS:
     return {
       'status_list': []
@@ -91,7 +90,21 @@ const mainReducer = (state = defaultState, action) => {
         })
       };
     }
-    
+
+    case types.DRAG_DROP: {
+      const { from, to, target } = action;
+      let card, ret = {
+        'status_list': [...state.status_list].map( (st) => {
+          return (st.id !== from ? st : { ...st, card_list: [...(st.card_list)].filter( ca => { return ca.id!==target ? true : ((card=ca)&&0) } ) })
+        })
+      };
+      return {
+        'status_list': [...ret.status_list].map( (st) => {
+          return (st.id !== to ? st : { ...st, card_list: [...(st.card_list),card] })
+        })
+      }
+    }
+
     default:
     return state
   }

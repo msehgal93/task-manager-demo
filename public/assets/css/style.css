@@ -62,6 +62,7 @@
   padding: 5px;
   background-color: #fafafa;
   border-radius: 5px;
+  cursor: move;
 }
 .text {
   margin: 0;

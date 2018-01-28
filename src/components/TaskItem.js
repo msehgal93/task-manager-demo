@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import { Draggable } from 'react-drag-and-drop'
 
 import { editCard, saveCard, cancelCard, deleteCard } from '../store/actions'
 
@@ -40,7 +41,10 @@ class TaskItem extends Component {
       )
     else
       return (
-        <div className="task-item">
+        <Draggable 
+          type="card"
+          data={sid+":"+id}
+          className="task-item">
           <div className="text-container">
             <p className="text">
               {text}
@@ -58,7 +62,7 @@ class TaskItem extends Component {
               <i className="demo-icon icon-pencil">&#xe804;</i>
             </button>
           </div>
-        </div>
+        </Draggable>
       )
   }
 }
