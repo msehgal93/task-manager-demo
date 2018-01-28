@@ -26,7 +26,7 @@ export const defaultState = {
         {
           id      : 'adhd234dy7fyd7fy',
           status  : 'view',
-          text    : 'Hi, You Use this Task manager to handle day to day tasks.'
+          text    : 'Hi, You can use this task manager to handle day to day tasks.'
         },
         {
           id      : 'uhdfdfd8fd7f8k88236',
